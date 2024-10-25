@@ -19,15 +19,18 @@ async function _takeScreenshot({ receivedElement }) {
     return screenshotBase64UrlData;
 }
 
+// Method for handling user configuration
+function getUserConfig (config) {
+    return {
+        apiKey: config?.openAI?.apiKey || process.env.OPENAI_API_KEY || '',
+    }
+};
+
 module.exports = {
     extendExpect: (expect, config) => {
         // Use API key from config if is present
-        let instanceOpenAI = null
-        if (config.openAI && config.openAI.apiKey) {
-            instanceOpenAI = OpenAI.getInstance({ apiKey: config.openAI.apiKey });
-        } else {
-            instanceOpenAI = OpenAI.getInstance();
-        }
+        const userConfig = getUserConfig(config)
+        const instanceOpenAI = OpenAI.getInstance(userConfig);
 
         expect.extend({
             async verifyWithVisionAI(receivedElement, ...args) {
