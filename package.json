@@ -2,7 +2,7 @@
   "name": "playwright-ai-vision-verify",
   "version": "0.0.1",
   "description": "AI-powered visual verification extension for Playwright using OpenAI to enhance your testing capabilities",
-  "main": "index.js",
+  "main": "./src/index.js",
   "files": [
     "src",
     "index.js"
