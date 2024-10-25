@@ -2,7 +2,7 @@
 
 Enhance your Playwright tests with AI-powered visual verification using OpenAI
 
-[![npm version](https://badge.fury.io/js/playwright-ai-visual-verify.svg)](https://www.npmjs.com/package/playwright-ai-visual-verify)
+[![npm version](https://badge.fury.io/js/playwright-ai-vision-verify.svg)](https://www.npmjs.com/package/playwright-ai-vision-verify)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🚀 Quick Start
@@ -10,7 +10,7 @@ Enhance your Playwright tests with AI-powered visual verification using OpenAI
 ### 1. Install
 
 ```bash
-npm install playwright-ai-visual-verify
+npm install playwright-ai-vision-verify
 ```
 
 ### 2. Setup
@@ -20,7 +20,7 @@ In your `playwright.config.js`:
 ```javascript
 import { defineConfig } from '@playwright/test';
 import { expect } from '@playwright/test';
-import { extendExpect } from 'playwright-ai-visual-verify';
+import { extendExpect } from 'playwright-ai-vision-verify';
 
 
 extendExpect(expect, {
@@ -93,7 +93,7 @@ In your `playwright.config.js`:
 ```diff
 import { defineConfig } from '@playwright/test';
 import { expect } from '@playwright/test';
-import { extendExpect } from 'playwright-ai-visual-verify';
+import { extendExpect } from 'playwright-ai-vision-verify';
 
 
 extendExpect(expect, {
