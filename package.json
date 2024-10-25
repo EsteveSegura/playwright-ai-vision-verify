@@ -1,0 +1,41 @@
+{
+  "name": "playwright-ai-vision-verify",
+  "version": "0.0.1",
+  "description": "AI-powered visual verification extension for Playwright using OpenAI to enhance your testing capabilities",
+  "main": "index.js",
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevesegura/playwright-ai-vision-verify"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "visual-testing",
+    "ai",
+    "openai",
+    "automation",
+    "visual-regression",
+    "visual-verification",
+    "e2e-testing",
+    "test-automation"
+  ],
+  "author": "Esteve Segura <girlazote@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estevesegura/playwright-ai-vision-verify/issues"
+  },
+  "homepage": "https://github.com/estevesegura/playwright-ai-vision-verify#readme",
+  "dependencies": {
+    "openai": "^4.68.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
