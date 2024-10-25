@@ -2,7 +2,7 @@
  * Import the OpenAI library.
  * @module OpenAILibrary
  */
-import { OpenAI as OpenAILirary } from "openai";
+const { OpenAI: OpenAILibrary } = require("openai");
 
 /**
  * Class representing an OpenAI instance.
@@ -69,10 +69,10 @@ class OpenAI {
      */
     #init() {
         if(this.apiKey) {
-            return new OpenAILirary({ apiKey: this.apiKey });
+            return new OpenAILibrary({ apiKey: this.apiKey });
         }
 
-        return new OpenAILirary();
+        return new OpenAILibrary();
     }
 
     /**
